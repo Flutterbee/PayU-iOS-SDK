@@ -34,11 +34,12 @@
 #import <ifaddrs.h>
 #import <netdb.h>
 
+typedef PayUReachability Reachability;
 
 NSString *const payUReachabilityChangedNotification = @"payUReachabilityChangedNotification";
 
 
-@interface Reachability ()
+@interface PayUReachability ()
 
 @property (nonatomic, assign) SCNetworkReachabilityRef  reachabilityRef;
 @property (nonatomic, strong) dispatch_queue_t          reachabilitySerialQueue;
@@ -84,7 +85,7 @@ static void TMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRea
 }
 
 
-@implementation Reachability
+@implementation PayUReachability
 
 #pragma mark - Class Constructor Methods
 

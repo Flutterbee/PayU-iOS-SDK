@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@class Reachability;
+@class PayUReachability;
+typedef PayUReachability Reachability;
 
 @interface ReachabilityManager : NSObject
 
