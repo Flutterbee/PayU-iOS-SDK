@@ -11,7 +11,7 @@
 #import "Utils.h"
 //#import "WebViewJavascriptBridge.h"
 #import "SharedDataManager.h"
-#import "Reachability.h"
+#import <PayU-iOS-SDK/Reachability.h>
 #import "ReachabilityManager.h"
 
 // ------------------- CB Import ----------------
